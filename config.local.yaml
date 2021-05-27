@@ -1,4 +1,5 @@
 # TATA
+client_id: 2347354-617d80cb-e124-4a0a-8664-d82f41af5328
 info:
   title: TATA
   description: .
@@ -9,12 +10,11 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
-client_id: 617D80CB-E124-4A0A-8664-D82F41AF5328
 ws:
   url: wss://aliconnect.nl:444
 client:
   servers:
-    - url: https://tata-aim.aliconnect.nl/api
+    - url: https://tata.aliconnect.nl/api
 whitelist:
   - 145.8.179.223
   - 185.65.53.57
