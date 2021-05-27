@@ -1,5 +1,5 @@
-$().config({
-  client_id: "2347354-617d80cb-e124-4a0a-8664-d82f41af5328",
+$().setconfig({
+  // client_id: "2347354-617d80cb-e124-4a0a-8664-d82f41af5328",
   info: {
     title: "TATA",
     description: ".",

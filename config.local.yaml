@@ -25,11 +25,6 @@ scope:
   - name
   - email
   - mobile
-ref:
-  wiki: https://github.com/aliconnect/tata/wiki
-  home: https://aliconnect.github.io/tata
-  wiki: https://tata-aim.aliconnect.nl/wiki
-  home: https://tata-aim.aliconnect.nl
 css:
   basebg: '#1B60DB'
   basefg: white
@@ -97,7 +92,7 @@ components:
         Children:
           format: hidden
           type: array
-        Message:
+        Messages:
           format: hidden
           type: array
         File:
@@ -118,6 +113,75 @@ components:
     Folder:
       allOf:
       - Item
+      properties:
+        State:
+          legend: Item
+          title: State
+          format: radio
+          filter: 1
+          options:
+            run:
+              title: Stopping
+              color: green
+            stopped:
+              title: Clearing
+              color: red
+        CreatedDateTime:
+          type: datetime
+          format: hidden
+        LastModifiedDateTime:
+          type: datetime
+          format: hidden
+        LastVisitDateTime:
+          type: datetime
+          format: hidden
+        StartDateTime:
+          type: datetime
+          format: hidden
+        EndDateTime:
+          type: datetime
+          format: hidden
+        FinishDateTime:
+          type: datetime
+          format: hidden
+        Master:
+          filter: true
+          title: Onderdeel van
+          schema: '*'
+        Src:
+          filter: true
+          title: Kopie van
+          schema: '*'
+        Class:
+          filter: true
+          title: Class
+          schema: '*'
+        Children:
+          format: hidden
+          type: array
+        Messages:
+          format: hidden
+          type: array
+          schema: Message
+        File:
+          format: files
+        Prefix:
+          filter: true
+        Tag:
+          type: text
+        Title:
+          type: text
+        Name:
+          type: text
+        Tagname:
+          format: hidden
+          type: array
+        ID:
+          readOnly: true
+    Message:
+      properties:
+        BodyHTML:
+          type: text
     Enterprise:
       allOf:
       - Item
