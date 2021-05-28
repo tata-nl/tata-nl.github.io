@@ -95,7 +95,7 @@ components:
         Messages:
           format: hidden
           type: array
-        File:
+        Files:
           format: files
         Prefix:
           filter: true
