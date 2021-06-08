@@ -293,6 +293,7 @@ components:
           classID: 4017
 
 
+
     ControlModule:
       allOf:
         - EquipmentModule
